@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Titillium web" , sans-serif ; 
+    list-style: none;
+    text-decoration: none;
+}
+body
+{
+  background-color: cornflowerblue;
+}
+
+h1 a
+{
+  padding-left: 60px;
+  color: white;
+  
+  
+}
+
+/* header et cont-nav*/
+.cont-nav
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    padding-top: 25px;   
+}
+.cont-nav ul li a 
+{
+  transition: border-bottom 0.3s ease;
+}
+ul li a
+{
+  padding:10px ;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  
+}
+ul{
+  width: 55%;
+  display: flex;
+  
+  
+}
+ul li a:hover
+{
+  border-bottom: solid 3px mediumorchid;
+  color: black;
+  
+ 
+}
+
+/* Styliser la partie main */
+
+.cont-main {
+    margin: 20px; /* Ajoute une marge autour du contenu principal */
+  }
+  
+  .cont-main h2 {
+    font-size: 24px; /* Taille de police pour les titres h2 */
+    color: white; /* Couleur du texte */
+    margin-bottom: 20px; /* Ajoute un espace en bas du titre */
+  }
+  
+  .cont-main article {
+    margin-bottom: 40px; /* Ajoute un espace entre chaque article */
+  }
+  
+  .cont-main h4 {
+    font-size: 20px; /* Taille de police pour les sous-titres h4 */
+    color: white; /* Couleur du texte */
+    margin-bottom: 10px; /* Ajoute un espace en bas du sous-titre */
+  }
+  
+  .cont-main p {
+    font-size: 18px; /* Taille de police pour les paragraphes */
+    color: white; /* Couleur du texte */
+    line-height: 1.5; /* Espacement des lignes */
+    margin-bottom: 20px; /* Ajoute un espace en bas du paragraphe */
+  }
+  
+  .cont-main img {
+    max-width: 100%; /* Assure que les images ne dépassent pas la largeur de leur conteneur */
+    height: auto; /* Évite la déformation de l'image */
+    display: block; /* Pour aligner correctement les images */
+    margin-bottom: 20px; /* Ajoute un espace en bas de l'image */
+  }
+  
+
+/*footer*/
+
+footer {
+    display: flex; /* Utilise Flexbox pour aligner les éléments en parallèle */
+    justify-content: space-between; /* Pour répartir l'espace entre les éléments */
+    align-items: center; /* Pour aligner verticalement les éléments au centre */
+    padding: 20px; /* Ajoute un peu d'espace intérieur pour que le contenu ne soit pas collé aux bords */
+    margin-left: 7%;
+    margin-right: 7%;
+    border-top: 1px solid #ccc; /* Ajoute une bordure supérieure au footer */
+    padding-top: 20px; /* Ajoute un peu d'espace entre la bordure et le contenu du footer */
+    color: white;
+  }
+  
+  footer section {
+    flex: 1; /* Pour que chaque section occupe une part égale de l'espace disponible */
+  }
+  
+  footer h3 p {
+    margin-bottom: 10px; /* Ajoute un peu d'espace en bas des titres */
+    
+  }
+  
+  footer p a {
+    margin: 0; /* Supprime les marges par défaut des paragraphes */
+    color: white;
+    
+  }
+  
+  
+  /* Ajoute des styles spécifiques pour les écrans de taille moyenne et plus grands */
+  
+  @media only screen and (min-width: 768px) {
+    .cont-nav 
+    {
+      margin-right: 5%;
+    }
+    main {
+      margin-right: 10%;
+      margin-left: 20%;
+    }
+    .cont-paragraph {
+      margin: 20px;
+      padding-right: 100px;
+    }
+    footer {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  
+  /* Ajoute des styles spécifiques pour les écrans plus petits */
+  
+  @media only screen and (max-width: 767px) {
+    .cont-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    .cont-nav ul {
+      width: 100%;
+      justify-content: center;
+    }
+    .cont-paragraph {
+      margin: 10px;
+      padding-right: 20px;
+    }
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /* Ajoute des styles spécifiques pour les écrans très petits, comme les smartphones */
+  
+  @media only screen and (max-width: 480px) {
+    .cont-paragraph {
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  
+  

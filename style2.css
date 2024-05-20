@@ -1,0 +1,161 @@
+/* renitialisation*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Titillium web" , sans-serif ; 
+    list-style: none;
+    text-decoration: none;
+}
+body
+{
+  background-color: darkgray;
+}
+
+h1 a
+{
+  padding-left: 60px;
+  color: white;
+  
+  
+}
+
+/* header et cont-nav*/
+.cont-nav
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    padding-top: 25px; 
+    cursor: pointer;  
+}
+.cont-nav ul li a 
+{
+  transition: border-bottom 0.3s ease;
+}
+ul li a
+{
+  padding:10px ;
+  display: flex;
+  font-size: 20px;
+  color: white; 
+}
+ul{
+  width: 55%;
+  display: flex;  
+}
+ul li a:hover
+{
+  border-bottom: solid 3px mediumorchid;
+  color: black;
+}
+
+
+/*styliser la partie main*/
+
+.cnt-main {
+  display: flex;
+  flex-direction: column; /* Organiser les éléments en colonne */
+  align-items: center; /* Centrer les éléments horizontalement */
+  padding: 20px; /* Ajouter un peu d'espace intérieur */
+  color: white;
+}
+
+.cnt-main h2 {
+  font-size: 28px; /* Taille de police pour le titre principal */
+  margin-bottom: 20px; /* Ajouter un peu d'espace en bas du titre */
+}
+
+.cnt-main section {
+  width: 100%; /* Prendre toute la largeur disponible */
+  margin-bottom: 30px; /* Ajouter un peu d'espace en bas de chaque section */
+}
+
+.cnt-main h3 {
+  font-size: 24px; /* Taille de police pour les sous-titres */
+  margin-bottom: 10px; /* Ajouter un peu d'espace en bas des sous-titres */
+}
+
+.cnt-main article {
+  margin-bottom: 20px; /* Ajouter un peu d'espace en bas de chaque article */
+}
+
+.cnt-main p {
+  margin-bottom: 10px; /* Ajouter un peu d'espace en bas des paragraphes */
+}
+
+.cnt-main ul {
+  list-style-type: disc; /* Style de puce pour les listes */
+  margin-left: 20px; /* Ajouter un peu d'espace à gauche des listes */
+}
+
+.cnt-main li {
+  margin-bottom: 5px; /* Ajouter un peu d'espace entre chaque élément de liste */
+}
+
+
+
+
+/*styliser la partie de footer*/
+
+
+footer {
+    display: flex; /* Utilise Flexbox pour aligner les éléments en parallèle */
+    justify-content: space-between; /* Pour répartir l'espace entre les éléments */
+    align-items: center; /* Pour aligner verticalement les éléments au centre */
+    padding: 20px; /* Ajoute un peu d'espace intérieur pour que le contenu ne soit pas collé aux bords */
+    margin-left: 7%;
+    margin-right: 7%;
+    border-top: 1px solid #ccc; /* Ajoute une bordure supérieure au footer */
+    padding-top: 20px; /* Ajoute un peu d'espace entre la bordure et le contenu du footer */
+    color: white;
+  }
+  
+  footer section {
+    flex: 1; /* Pour que chaque section occupe une part égale de l'espace disponible */
+  }
+  
+  footer h3 p {
+    margin-bottom: 10px; /* Ajoute un peu d'espace en bas des titres */
+    
+  }
+  
+  footer p a {
+    margin: 0; /* Supprime les marges par défaut des paragraphes */
+    color: white;
+  }
+  
+
+
+/* Ajustements pour les petits et moyens écrans */
+@media only screen and (max-width: 768px) {
+  .cont-nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cont-nav ul li a {
+    padding: 10px 0;
+    border-bottom: none;
+  }
+
+  /* Ajustements pour la partie main */
+  .cnt-main h2 {
+    font-size: 24px;
+  }
+  
+  .cnt-main h3 {
+    font-size: 20px;
+  }
+
+  .cnt-main p {
+    font-size: 16px;
+  }
+
+  /* Ajustements pour le footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,228 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Titillium web" , sans-serif ; 
+  list-style: none;
+  text-decoration: none;
+}
+body
+{
+background-color: cornflowerblue;
+}
+
+h1 a
+{
+padding-left: 60px;
+color: white;
+
+
+}
+
+/* header et cont-nav*/
+.cont-nav
+{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  padding-top: 25px;   
+}
+.cont-nav ul li a 
+{
+transition: border-bottom 0.3s ease;
+}
+ul li a
+{
+padding:10px ;
+display: flex;
+font-size: 20px;
+color: white;
+
+}
+ul{
+width: 55%;
+display: flex;
+
+
+}
+ul li a:hover
+{
+border-bottom: solid 3px mediumorchid;
+color: black;
+
+
+}
+
+/*parti main*/
+
+main {
+  
+display: flex;
+justify-content: center;
+align-items: center;
+  height: 100vh; 
+  margin-right: 20%;
+  margin-left: 10%;
+  
+}
+
+/* Style pour le conteneur de l'image (main)*/
+
+.images-cont {
+  width: 100%; /* Assurez-vous que le conteneur occupe toute la largeur disponible */
+  max-width: 400px; /* ou toute autre largeur maximale souhaitée */
+  margin: 0 auto; /* Pour centrer le conteneur horizontalement */
+  border: 2px solid #ddd; /* Ajoute une bordure autour du conteneur */
+  border-radius: 400px; /* Bordure arrondie */
+  overflow: hidden; /* Empêche l'image de déborder du conteneur */
+  
+}
+
+/* Style pour l'image à l'intérieur du conteneur (main) */
+.images-cont img {
+  width: 100%; /* Assurez-vous que l'image remplit tout l'espace disponible dans le conteneur */
+  height:  auto; /* Garantit que la hauteur de l'image est ajustée en proportion à la largeur */
+  display: block; /* Permet de centrer l'image horizontalement dans le conteneur */
+
+}
+.cont-paragraph
+{
+  margin: 40px; /* Réduire la marge autour du contenu */
+  padding-right: 150px;
+  padding-bottom: 1%;
+  margin-top: 15%;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+/* main parti  nav*/
+
+.nav-1
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  color: white; 
+  cursor: pointer;
+}
+
+ ul li
+{
+  padding:10px ;
+  display: flex;
+}
+
+
+.nav-1 a {
+  width: 90px; /* largeur fixe pour chaque lien */
+  height: 80px; /* hauteur fixe pour chaque lien */
+  border-radius: 60%; /* pour arrondir les bords et créer un cercle */
+  display: flex; /* pour aligner le contenu au centre */
+  justify-content: center; /* pour centrer horizontalement */
+  align-items: center; /* pour centrer verticalement */
+  text-decoration: none; /* pour enlever le soulignement des liens */
+  transition: background-color 0.5s ease; /* Transition sur la couleur de fond avec une durée de 0.3 seconde et une fonction d'accélération */
+  
+}
+
+/* Tu peux définir des styles spécifiques pour chaque couleur de fond */
+.nav-1 .yelow a {
+  background-color: teal; /* couleur de fond */
+  color: white; /* couleur du texte */
+}
+
+.nav-1 .orange a {
+  background-color: coral;
+  color:white;
+}
+
+.nav-1 .blue a {
+  background-color: blue;
+  color: white;
+}
+.nav-1 a:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: black; /* Changement de couleur du texte pour le rendre plus lisible */
+}
+
+/*footer*/
+
+footer {
+  display: flex; /* Utilise Flexbox pour aligner les éléments en parallèle */
+  justify-content: space-between; /* Pour répartir l'espace entre les éléments */
+  align-items: center; /* Pour aligner verticalement les éléments au centre */
+  padding: 20px; /* Ajoute un peu d'espace intérieur pour que le contenu ne soit pas collé aux bords */
+  margin-left: 7%;
+  margin-right: 7%;
+  border-top: 1px solid #ccc; /* Ajoute une bordure supérieure au footer */
+  padding-top: 20px; /* Ajoute un peu d'espace entre la bordure et le contenu du footer */
+  color: white;
+}
+
+footer section {
+  flex: 1; /* Pour que chaque section occupe une part égale de l'espace disponible */
+}
+
+footer h3 p {
+  margin-bottom: 10px; /* Ajoute un peu d'espace en bas des titres */
+  
+}
+
+footer p a {
+  margin: 0; /* Supprime les marges par défaut des paragraphes */
+  color: white;
+  
+}
+
+
+/* Ajoute des styles spécifiques pour les écrans de taille moyenne et plus grands */
+
+@media only screen and (min-width: 768px) {
+  .cont-nav 
+  {
+    margin-right: 5%;
+  }
+  main {
+    margin-right: 10%;
+    margin-left: 20%;
+  }
+  .cont-paragraph {
+    margin: 20px;
+    padding-right: 100px;
+  }
+  footer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* Ajoute des styles spécifiques pour les écrans plus petits */
+
+@media only screen and (max-width: 767px) {
+  .cont-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont-nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+  .cont-paragraph {
+    margin: 10px;
+    padding-right: 20px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Ajoute des styles spécifiques pour les écrans très petits, comme les smartphones */
+
+@media only screen and (max-width: 480px) {
+  .cont-paragraph {
+    font-size: 16px;
+  }
+}
